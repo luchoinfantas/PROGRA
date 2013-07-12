@@ -1,0 +1,24 @@
+/******************************************************************************************************/
+/*   INTRODUCCION A LA PROGRAMACION                                                                   */  
+/*   NOMBRE: luis infantas                                                                            */     
+/*   FECHA: 12 de julio del 2013                                                                      */
+/*   DESCRIPCION: un pequeño programa que toma el lado de un cuadrado y nos da el area del mismo      */  
+/*                                                                                                    */    
+/*                                                                                                    */
+/******************************************************************************************************/
+
+#include "stdafx.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+void main()
+{float lado,area;
+  printf("\t\t area de un cuadrado\n");
+  printf("\t\t ====================\n");
+  printf("\ningrese el un lado del cuadrado\n\n");
+  scanf("%f",&lado);
+  area=lado*lado;
+  printf("\n\nel area del cuadrado es %f \n\n",area);
+  system("pause");
+
+}
