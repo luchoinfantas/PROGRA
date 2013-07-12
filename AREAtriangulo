@@ -1,0 +1,32 @@
+/******************************************************************************************************/
+/*   INTRODUCCION A LA PROGRAMACION                                                                   */  
+/*   NOMBRE: luis infantas                                                                            */     
+/*   FECHA: 12 de julio del 2013                                                                      */
+/*   DESCRIPCION: un pequeño programa que toma la base y la altura de un triangulo para sacar su base */  
+/*                                                                                                    */    
+/*                                                                                                    */
+/******************************************************************************************************/
+
+#include "stdafx.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+void main() 
+{ float base, altura,area;
+     printf("\t\t\tcalcula el area del triangulo\n");
+   printf("\t\t\t-_-_--_-_--_-_--_-_--_-_--_-_-\n\n\n");
+     printf("\ningrese la base\n\n");
+     scanf("%f",&base);
+
+     printf("\n\ningrese la altura\n\n");
+     scanf("%f",&altura);
+	 if((base>0) && (altura>0))
+	 {
+     area = (base*altura)/2;
+     printf("\nel area es %f \n\n",area);
+	 }
+	 else{
+	      printf("ingrese un numero mayor a cero\n\n");
+	     }
+	 system("pause");
+}
