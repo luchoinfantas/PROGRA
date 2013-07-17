@@ -1,0 +1,29 @@
+/****************************************************************************/
+/* NOMBRE: Luis Infantas                                                    */
+/* FECHA:16/06/13                                                           */
+/* DESCRIPCION:Este programa toma una distancia y un tiempo para calcular   */
+/* la velocidad de un objeto                                                */
+/****************************************************************************/
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{float velocidad, distancia, tiempo; 
+   printf("\t\tVELOCIDAD \n");
+   printf("\t\t=========");
+   printf("\ningrese la distancia en metros: ");
+   scanf("%f", &distancia);
+   printf("\ningrese el tiempo en segundos: ");
+   scanf("%f", &tiempo);
+   if(tiempo<0 && distancia<0)
+     printf("\ningrese datos validos\n");
+   else
+   {velocidad= distancia/tiempo;
+    printf("la velocidad es %f M/S \n\n", velocidad);
+   }
+   
+   system("pause");
+}
+
