@@ -1,0 +1,42 @@
+/*********************************************************************/
+/* INTRODUCCION A LA PROGRAMACION INTESIVO                           */
+/* NOMBRE:LUIS INFANTAS                                              */
+/* DESCRIPCION: este programa toma 5 numeros y nos devuelve el       */
+/*               promedio de los mismos.                             */
+/*                                                                   */
+/*                                                                   */
+/*********************************************************************/
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+
+void main ()
+{float numero1,numero2,numero3,numero4,numero5,promedio;
+ printf("\t\tPROMEDIO\n");
+ printf("\t\t========\n\n");
+printf("ingrese el primer numero:");
+scanf("%f",&numero1);
+printf("\ningrese el segundo numero:");
+scanf("%f",&numero2);
+printf("\ningrese el tercer numero:");
+scanf("%f",&numero3);
+printf("\ningrese el cuarto numero:");
+scanf("%f",&numero4);
+printf("\ningrese el quinto numero:");
+scanf("%f",&numero5);
+if(numero1>0 && numero2>0 && numero3>0 && numero4>0 && numero5>0)
+  { promedio=(numero1+numero2+numero3+numero4+numero5)/5;
+    printf("\n=============================");
+    printf("\nel promedio es: %f", promedio);
+  printf("\n=============================\n\n");
+  }
+else 
+  {printf("ingrese valores mayores a 0");
+  }
+system("pause");
+}
+
+
+
+
