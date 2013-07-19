@@ -1,0 +1,40 @@
+/*********************************************************************/
+/* INTRODUCCION A LA PROGRAMACION INTESIVO                           */
+/* NOMBRE:LUIS INFANTAS                                              */
+/* DESCRIPCION: Este programa toma un numero, lo divide y suma sus   */
+/*             divisores para mostrarnos si es un numero perfecto    */
+/*             o no lo es.                                           */
+/*                                                                   */
+/*********************************************************************/
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "math.h"
+void main ()
+{int numero,aux,acumulador;
+   printf("\t\tNUMEROS PERFECTOS\n");
+   printf("\t\t=================\n\n");
+   printf("ingrese un numero: ");
+   scanf("%d",&numero);
+   acumulador=0;
+   aux=1;
+     while(numero>aux)
+	   {
+		   if((numero%aux)==0)
+		     { acumulador=acumulador+aux;
+			 
+
+		     }
+	    aux=aux+1;
+	   }
+	  if(acumulador==numero)
+        {printf("\nel numero %d es PERFECTO \n\n",numero);
+      
+	    }
+	    else 
+	    {printf("\nel numero %d NO es PERFECTO \n\n",numero);
+	    }
+
+system("pause");
+
+}
