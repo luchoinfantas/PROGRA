@@ -1,0 +1,35 @@
+/*********************************************************************/
+/* INTRODUCCION A LA PROGRAMACION INTESIVO                           */
+/* NOMBRE:LUIS INFANTAS                                              */
+/* DESCRIPCION: este programa toma cualquier numero, separa sus      */
+/*              digitos y nos muestra por separado cuales son pares  */
+/*                                                                   */
+/*                                                            lbi    */
+/*********************************************************************/
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "math.h"
+
+void main ()
+{int numero,divisor,aux,division;
+printf("\t\tDIGITOS PARES :D\n");
+ printf("\t\t===============\n\n");
+ printf("ingrese un numero:  ");
+ scanf("%d",&numero);
+ while(numero>0)
+  {divisor=numero%10;
+  division=numero/10;
+  numero=division;
+  aux=divisor;
+   if(aux%2==0)
+    {printf("\nel numero %d es par\n\n",aux);
+   
+    }
+
+  }
+   
+system("pause");
+}
+
+
