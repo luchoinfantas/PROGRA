@@ -1,0 +1,42 @@
+/**************************************************************************/
+/* INTRODUCCION A LA PROGRAMACION                                         */
+/* NOMBRE:LUIS INFANTAS FECHA: 19/07/13                                   */
+/* DESCRIPCION: Este programa lee la altura de una persona y pregunta     */
+/*              el sexo de de la misma para despues mostrar el peso       */
+/*              ideal del mismo.                                          */
+/**************************************************************************/
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "math.h"
+void main ()
+{float altura,hombres,mujeres;
+int opcion;
+
+   printf("\t\tPESO IDEAL\n");
+   printf("\t\t==========\n\n");
+   printf("ingrese su altura en metros:  ");
+   scanf("%f",&altura);
+   printf("\nsi es mujer introduzca el numero: 1\n\nsi es hombres introduzca el numero:2 \n\n");
+   scanf("%d",&opcion);
+    if(opcion==1)
+    {mujeres=(62.1*altura)-44.7;
+	   printf("su peso ideal es: %f \n\n",mujeres );
+	  }
+	   
+	  
+	else 
+	  {	if(opcion==2)  
+	     {hombres=(72.7*altura)-58; 
+	      printf("su peso ideal es: %f \n\n",hombres);
+	     
+	     }
+	  else 
+	   {printf("ingrese una opcion valida\n\n");
+	   }
+	}
+
+	
+system("pause");
+
+}
