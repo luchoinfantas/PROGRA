@@ -1,0 +1,36 @@
+/*********************************************************************/
+/* INTRODUCCION A LA PROGRAMACION INTESIVO                           */
+/* NOMBRE:LUIS INFANTAS                                              */
+/* DESCRIPCION: este programa toma cualquier numero, separa sus      */
+/*              digitos, nos muestra por separado cuales son pares   */
+/*              y luego nos dice que cantidad de numeros pares hay   */
+/*                                                            lbi    */
+/*********************************************************************/
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "math.h"
+
+void main ()
+{int numero,divisor,aux,division,contador;
+printf("\t\tCONTADOR DE DIGITOS PARES \n");
+ printf("\t\t========================\n\n");
+ printf("ingrese un numero:  ");
+ scanf("%d",&numero);
+ contador=0;
+ while(numero>0)
+  {divisor=numero%10;
+  division=numero/10;
+  numero=division;
+  aux=divisor;
+   if(aux%2==0)
+   {contador=contador+1;
+     printf("\nel numero %d es par\n\n",aux);
+
+     }
+  }
+ printf("el numero de digitos pares es: %d\n\n",contador);
+   
+system("pause");
+
+}
