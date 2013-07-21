@@ -1,0 +1,41 @@
+/***********************************************************************************/
+/* INTRODUCCION A LA PROGRAMACION INTENSIVO                                        */
+/* NOMBRE:                                                                         */
+/* FECHA:                                                                          */
+/* DESCRIPCION: Este programa lee N numeros de obreros y sus horas trabajadas      */
+/*              si trabaja igual o menos a 40 horas se realiza un calculo distinto */
+/*              a que trabaje mas de 40 horas, siendo mayor la paga a los que      */
+/*              trabajen mas de 40 horas                                           */
+/*                                                              LBI                */
+/***********************************************************************************/
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+void main ()
+{
+float horas, salario, suma;
+int i,numero;
+printf("\t\tSALARIO DE TRABAJADORES\n");
+printf("\t\t=======================\n\n");
+printf("\n Ingrese el numero de obreros: ");
+scanf("%d",&numero);
+suma = 0;
+for (i=1;i<=numero;i++)
+{
+printf("\n Introduzca horas trabajadas : ");
+scanf("%f",&horas);
+if (horas <= 40)
+salario = horas*20;  
+else
+{
+horas = horas - 40;
+salario = (horas*25)+ 800;
+}
+printf("\nEl salario del obrero %d es: %f\n",i,salario);
+suma = suma + salario;
+}
+printf("\n\nEL SALARIO SEMANAL ES : %f\n\n",suma);
+system("pause");
+}
