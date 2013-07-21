@@ -3,7 +3,7 @@
 /* NOMBRE:LUIS INFANTAS                                              */
 /* DESCRIPCION: este programa nos pide que ingresemos una constraseña*/
 /*              de 4 digitos para poder ingresar a una boveda        */
-/*              solo se tienen 3 intentos.                           */
+/*              solo se tienen 3 intentos.contraseña:2610            */
 /*                                                            lbi    */
 /*********************************************************************/
 #include "stdafx.h"
