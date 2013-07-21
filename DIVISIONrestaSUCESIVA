@@ -1,0 +1,40 @@
+/***************************************************************************/
+/* INTRODUCCION A LA PROGRAMACION INTESIVO                                 */
+/* NOMBRE:LUIS INFANTAS                                                    */
+/* DESCRIPCION: este programa nos pide que ingresemos dos numeros y con    */
+/*              restas sucesivas nos muestra la division de los numeros    */
+/*                                                                         */
+/*                                                                         */
+/*                                                            lbi          */
+/***************************************************************************/
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+void main ()
+{float aux2,numero,resta,divisor,i,aux,i2,resultado;
+printf("\t\tELEVAR AL CUADRADO CON SUMAS SUCESIVAS \n");
+printf("\t\t======================================\n");
+printf("\ningrese el numero que desea dividir: ");
+scanf("%f",&numero);
+printf("\ningrese el numero por el que desea dividir");
+scanf("%f",&divisor);
+i=0;
+i2=0;
+aux2=1;
+aux=numero;
+while(aux>divisor-1)
+{resta=numero-divisor;
+aux=aux-divisor;
+ i=i+1;
+
+
+}
+aux2=aux*10;
+aux2=aux2/divisor;
+aux2=aux2/10;
+resultado=i+aux2;
+printf("\n\nEl resultado es: %f\n\n",resultado);
+system("pause");
+
+}
