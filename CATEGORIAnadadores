@@ -1,0 +1,65 @@
+/*********************************************************************************/
+/* INTRODUCCION A LA PROGRAMACION INTENSIVO                                      */
+/* NOMBRE: Luis Infantas     FECHA:19/07/13                                      */
+/* DESCRIPCION: Este programa lee la edad de un nadador para clasificarlo en     */
+/*              una de las cinco categorias de la siguiente tabla:               */
+/*   INFANTIL A --> 5  AÑOS - 7  AÑOS                                            */
+/*   INFANTIL B --> 8  AÑOS - 10 AÑOS                                            */
+/*   JUVENIL  A --> 11 AÑOS - 13 AÑOS                                            */
+/*   JUVENIL  B --> 14 AÑOS - 17 AÑOS                                            */
+/*   ADULTO     --> 18 AÑOS - 60 AÑOS                                            */
+/*   SEÑOR      --> 60 AÑOS -- EN ADELANTE                                       */
+/*********************************************************************************/
+#include "stdafx.h"
+#include "stdlib.h"
+#include "stdio.h"
+
+void main()
+{int edad;
+ printf("\t\tCATEGORIAS DE NADADORES\n");
+ printf("\t\t=======================\n\n");
+ printf("ingrese la edad del nadador:   ");
+ scanf("%d",&edad);
+      if(edad>=5 && edad<=7)
+      {printf("\n\nel nadador se encuentra en la categoria INFANTIL A\n\n"); 
+	    }
+	  else
+	    {  if (edad>=8 && edad<=10)
+	         {printf("\nel nadador se encuentra en la categoria INFANTIL B\n\n ");
+	        
+	         }
+		  else
+		  { if(edad>=11 && edad<=13)
+	        {printf("\nel nadador se encuentra en la categoria JUVENIL A\n\n");
+	        }
+		  else
+		  {    if(edad>=14 && edad<=17)
+	            {printf("\nel nadador se encuentra en la categoria JUVENIL B\n\n");
+	            }
+		     else
+			 { if(edad>=18 && edad<=60)
+	              {printf("\nel nadador se encuentra en la categoria ADULTO\n\n");
+	              }
+			   else
+			     { if(edad>=61 && edad<=100)
+	                {printf("\nel nadador se encuentra en la categoria SEÑOR\n\n");
+	           
+	                }
+				 else
+				   {printf("\nel nadador se encuentra fuera de categoria\n\n");
+	               }
+	             } 
+	         }
+	      }
+	      
+	      } 
+	   }
+
+
+
+
+
+
+
+system("pause");
+}
