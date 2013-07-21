@@ -1,0 +1,48 @@
+/*********************************************************************/
+/* INTRODUCCION A LA PROGRAMACION INTESIVO                           */
+/* NOMBRE:LUIS INFANTAS                                              */
+/* DESCRIPCION: este programa nos pide que ingresemos un rango       */
+/*              entre dos numeros ejemple:de 3 a 12. y nos suma      */
+/*              todos los numeros pares enteros dentro del rango     */
+/*              sin tomar en cuenta los que lo determian.            */
+/*                                                            lbi    */
+/*********************************************************************/
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+void main ()
+{int inicio, fin,suma,numero,final;
+printf("\t\tSUMA RANGO DE NUMEROS PARES \n");
+ printf("\t\t==========================\n");
+ printf("\ningrese el numero que inicia el rango:  ");
+ scanf("%d",&inicio);
+ printf("\ningrese el numero que termina el rango:  ");
+ scanf("%d",&fin);
+ numero=inicio;
+ suma=0;
+ final=fin;
+ if(fin%2==0)
+ {while(numero!=final)
+  {numero=numero+1;
+    if(numero%2==0)
+  {suma=suma+numero;
+	}
+   
+  }
+ printf("\nla suma del rango es: %d \n\n", suma-final	);
+ }
+ else
+   { while(numero!=final)
+    {numero=numero+1;
+    if(numero%2==0)
+	{suma=suma+numero;
+	}
+   
+  }
+ printf("\nla suma del rango es: %d \n\n", suma);
+ 
+ }
+system("pause");
+
+}
