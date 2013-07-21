@@ -1,0 +1,35 @@
+/*********************************************************************/
+/* INTRODUCCION A LA PROGRAMACION INTESIVO                           */
+/* NOMBRE:LUIS INFANTAS                                              */
+/* DESCRIPCION: este programa nos pide que ingresemos numeros cuantas*/
+/*              veces querramos preguntanos si deseamos continuar    */
+/*              si escogemos no seguir nos mostrara el promedio de   */
+/*              los numeros ingresados                               */
+/*                                                            lbi    */
+/*********************************************************************/
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+void main ()
+{float numero,acumulador,promedio,opcion;
+ int i;
+printf("\t\tPROMEDIO CUALQUIER NUMERO DE VECES \n");
+printf("\t\t==================================\n");
+acumulador=0;
+i=0;
+do
+{printf("\ningrese un numero para promediar:");
+scanf("%f",&numero);
+i=i+1;
+acumulador=acumulador+numero;
+promedio=acumulador/i;
+printf("\ndesea continua? si(1), no(2)");
+scanf("%f",&opcion);
+}
+while(opcion==1);
+printf("\n\nel promedio de los %d numeros es: %f \n\n",i,promedio);
+
+system("pause");
+
+}
