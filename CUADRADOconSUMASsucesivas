@@ -1,0 +1,33 @@
+/*********************************************************************/
+/* INTRODUCCION A LA PROGRAMACION INTESIVO                           */
+/* NOMBRE:LUIS INFANTAS                                              */
+/* DESCRIPCION: este programa nos pide que ingresemos entero y con   */
+/*              sumas sucesivas nos muestra el cuadrado del mismo    */
+/*              numero.                                               */
+/*                                                                   */
+/*                                                            lbi    */
+/*********************************************************************/
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+void main ()
+{int numero,suma,exponente,i;
+printf("\t\tELEVAR AL CUADRADO CON SUMAS SUCESIVAS \n");
+printf("\t\t======================================\n");
+printf("\ningrese el numero que desea elevar: ");
+scanf("%d",&numero);
+
+i=0;
+suma=0;
+
+while(i!=numero)
+  {suma=suma+numero;
+
+i=i+1;
+  }
+printf("\nla respuesta es: %d \n\n", suma);
+system("pause");
+
+}
+
