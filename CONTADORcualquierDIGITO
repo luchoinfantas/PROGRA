@@ -1,0 +1,33 @@
+/*********************************************************************/
+/* INTRODUCCION A LA PROGRAMACION INTESIVO                           */
+/* NOMBRE:LUIS INFANTAS                                              */
+/* DESCRIPCION: este programa toma cualquier numero, separa sus      */
+/*              digitos y nos muestra que cantidad de digitos tiene  */
+/*                                                                   */
+/*                                                            lbi    */
+/*********************************************************************/
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "math.h"
+
+void main ()
+{int numero,divisor,aux,division,contador;
+printf("\t\tCONTADOR DE DIGITOS PARES \n");
+ printf("\t\t========================\n\n");
+ printf("ingrese un numero:  ");
+ scanf("%d",&numero);
+ contador=0;
+ while(numero>0)
+ {
+  division=numero/10;
+  numero=division;
+  contador=contador+1;
+
+     }
+
+ printf("\n\nel numero de digitos es: %d\n\n",contador);
+   
+system("pause");
+
+}
