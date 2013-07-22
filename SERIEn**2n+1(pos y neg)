@@ -16,10 +16,11 @@
 void main()
 {float y ,fact,signo,potencia,aux,suma,x;
 int i,n,expo;
-
+printf("\t\tSERIE x**2n+1/2n!\n");
+printf("\t\t=================\n\n");
 printf("ingrese un numero");
 scanf("%d",&n);
-printf("ingrese la variable x");
+printf("\ningrese la variable x");
 scanf("%f",&x);
 fact=1;
 suma=0;
@@ -37,7 +38,7 @@ do
 
   }
   while(i!=n);
-printf("%f",suma);
+printf("el resultado es %f\n\n",suma);
 
 system("pause");
 
