@@ -1,0 +1,44 @@
+/************************************************************************************/
+/* INTRODUCCION A LA PROGRAMACION INTENSIVO                                         */
+/* NOMBRE: Luis Infantas                                                            */
+/* DESCRIPCION: este programa lee un numero N y un exponente i para seguir la serie */
+/*              x**2n+1/2n!                                                         */
+/*                                                                                  */
+/*                                                                                  */
+/************************************************************************************/
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "math.h"
+
+
+void main()
+{float y ,fact,signo,potencia,aux,suma,x;
+int i,n,expo;
+
+printf("ingrese un numero");
+scanf("%d",&n);
+printf("ingrese la variable x");
+scanf("%f",&x);
+fact=1;
+suma=0;
+signo=1;
+i=1;
+do
+  {aux=2*i;
+   fact=fact*aux;
+   expo=2*i+1;
+   suma=suma+pow(x,expo)/fact;
+   signo=signo*(-1);
+   suma=suma*signo;
+   i=i+1;
+
+
+  }
+  while(i!=n);
+printf("%f",suma);
+
+system("pause");
+
+}
