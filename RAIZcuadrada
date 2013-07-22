@@ -1,0 +1,34 @@
+/************************************************************************************/
+/* INTRODUCCION A LA PROGRAMACION INTENSIVO                                         */
+/* NOMBRE: Luis Infantas                                                            */
+/* DESCRIPCION: este programa lee un numero y nos devulve la raiz cuadrada del mismo*/
+/*                                                                                  */
+/*                                                                                  */
+/*                                                                           lbi    */
+/************************************************************************************/
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "math.h"
+
+
+void main()
+{float raiz,numero;
+printf("\t\tRAIZ CUADRADA DE UN NUMERO\n");
+printf("\t\t==========================\n\n");
+printf("ingrese el numero que del que desea sacar raiz: ");
+scanf("%f",&numero);
+if(numero>0)
+ {raiz=sqrt(numero);
+  printf("\n\nla raiz es igual a: %f\n\n",raiz);
+ }
+
+else
+
+{printf("\nRAIZ IMAGINARIA\n\n");
+}
+
+system("pause");
+
+}
