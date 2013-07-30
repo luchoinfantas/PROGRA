@@ -1,0 +1,84 @@
+// vectorangeles.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#define  nMax 100
+
+void cargar (int vec[], int n);
+void comparar(int vec[], int n, int precio);
+
+void main()
+{int n, vec[nMax],precio;
+printf("\t\t TEATRO\n");
+printf("\t\t ======\n\n");
+printf("ingrese la cantidad de cliente: ");
+ scanf("%d",&n);
+ printf("\ningrese el precio de la entrada: ");
+ 
+ scanf("%d",&precio);
+ cargar(vec,n);
+ comparar(vec,n,precio);
+ printf("\n\n");
+ system("pause");
+}
+
+void cargar (int vec[], int n)
+{ int i,precio;
+  for(i=0;i<n;i++)
+  {printf("\ningrese la edad del cliente [%d]:  ",i+1);
+   scanf("%d",&vec[i]);
+  }
+
+}
+ void comparar(int vec[], int n,int precio)
+ {float a1=0,a2=0,a3=0,a4=0,a5=0,t1,t2,t3,t4,t5,tt;
+  int i;
+   for(i=0;i<n;i++)
+   { if((vec[i]>=5) && (vec[i]<=14))
+          {t1=precio*0.35;
+           a1=a1+t1;
+          }
+     else
+   {   if ((vec[i]>=15) && (vec[i]<=19))
+          { t2=precio*0.25;
+            a2=a2+t2;
+          }
+	    else
+		 { if((vec[i]>=20) && (vec[i]<=45))
+           { t3=precio*0.10;
+              a3=a3+t3;
+           }
+		 else
+		 { if((vec[i]>=46) && (vec[i]<=65))
+           {t4=precio*0.25;
+            a4=a4+t4;
+           }
+		 else
+		    {if((vec[i]>=66) && (vec[i]<=120))
+             {t5=precio*0.35;
+              a5=a5+t5;
+              }
+			else
+			  {printf("\n\nlos fantasmas no entran al cine");
+              }
+             }
+            }
+   
+         }
+        }
+     
+     }
+    tt=a1+a2+a3+a4+a5;
+ printf("\n\npor la categoria 1 pierde: %f",a1);
+ printf("\npor la categoria 2 pierde: %f",a2);
+ printf("\npor la categoria 3 pierde: %f",a3);
+ printf("\npor la categoria 4 pierde: %f",a4);
+ printf("\npor la categoria 5 pierde: %f",a5);
+ printf("\n=====================================");
+ printf("\nLa perdida total es:%f",tt);
+ }
+  
+
+ 
