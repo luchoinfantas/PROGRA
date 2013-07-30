@@ -1,0 +1,67 @@
+// burbuja.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdlib.h"
+#include "stdio.h"
+#define NMAX 10
+
+
+void main()
+{int j, i,n,aux,vec[NMAX],dato,mayor,menor,centro;
+system("color 4F");
+do{
+   printf("ingrese el numero maximo del vector");
+   scanf("%d",&n);
+  }
+while((n>100)|| (n<=0));
+  for(i=0;i<n;i++)
+    {
+		  printf("Vec [%d]=",i+1);
+		  scanf("%d",&vec[i]);
+      }
+     for(i=0;i<n-1;i++)
+	 { for(j=i+1;j<n;j++)
+	       if(vec[i] > vec[j])
+		   {aux=vec[j];
+	        vec[j]=vec[i];
+			vec[i]=aux;
+		   }
+	 
+	 };
+	 printf("\n\n");
+ for(i=0;i<n;i++)
+ {
+printf("vec [%d]=",i);
+printf("%d\n ",vec[i]);
+ }
+printf("Que dato desea buscar?");
+scanf("%d",&dato);
+mayor=n-1;
+menor=0;
+
+while(mayor>menor)
+{ centro=(mayor+menor)/2;
+  if(vec[centro] == dato)
+   {printf("esta en la posicion vec[%d]",centro);  
+   system("pause"
+	   );
+  
+   }
+  else 
+  { if(dato>vec[centro])
+     { menor=centro;
+       
+     }
+  else
+    { mayor=centro;
+  
+    }
+  }
+printf("no hay ese dato");
+system("pause");
+}
+
+system("pause");
+}
+
