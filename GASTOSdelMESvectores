@@ -1,0 +1,47 @@
+/*******************************************************************************/
+/* Introduccion a la programacio intensivo                                     */
+/* nombre:luis Infantas                                                        */
+/* descripcion: este programa toma los dias del mes que ingrese y pide que     */
+/*              que ingrese los gatos realizados en cada dia, ademas en un dia */
+/*              puede haber mas de un gasto o puede no haber ninguno.          */
+/*                                                                             */                       
+/*******************************************************************************/
+#include "stdafx.h"
+#include "stdlib.h"
+#include "stdio.h"
+#define NMAX 100
+
+void main()
+{int vec[NMAX],n,dia,i,j,cgastos,gasto,aux,mayor,suma;
+system("color 4F");
+printf("\t\t\tGASTOS DEL MES\n");
+printf("\t\t\t==============\n\n");
+printf("Ingrese la cantidad de dias del mes: ");
+scanf("%d",&dia);
+
+for(i=1;i<=dia;i++)
+{ suma=0;
+  printf("Introduzca la cantidade de gastos del dia %d:  ",i);
+  scanf("%d",&cgastos);
+  for(j=1;j<=cgastos;j++)
+  {printf("Ingrese gastos %d ",j);
+   scanf("%d",&gasto);
+   suma=suma+gasto;
+   
+   vec[i]=suma;
+    }
+  
+
+}
+aux=0;
+for(i=1;i<=dia;i++)
+  { if(vec[i]>aux)
+    {aux=vec[i]; 
+     mayor=i; 
+    }
+
+ }
+printf("EL DIA %d GASTOOOO %d, Y FUE EL MAYOR GASTO\n\n",mayor,aux);
+
+ system("pause");
+}
