@@ -1,0 +1,41 @@
+/*************************************************************************/
+/* introduccion a la programacion intensivo                              */
+/* Nombre: Luis Infantas                                                 */
+/* descripcion: este programa llena un vector con n numeros, compara de  */
+/*            a dos numeros y muestra la mayor diferencia entre ellos    */
+/*                                                                       */
+/*                                                                       */
+/*                                                                 lbi   */
+/*************************************************************************/
+
+
+#include "stdafx.h"
+#include "stdlib.h"
+#include "stdio.h"
+#define NMAX 100
+
+void main()
+{int j, i,n,aux,vec[NMAX],suma,z,diferencia,comp,cont;
+float promedio;
+system("color 4F");
+printf("\t\tMAYOR DIFERENCIA DE DOS NUMEROS\n");
+printf("\t\t===============================\n\n");
+printf("ingrese la cantidad de espacios en el vector:  ");
+scanf("%d",&n);
+  for(i=0;i<n;i++)
+   {   printf("ingrese un numero al espacio [%d]",i);
+     scanf("%d",&vec[i]);
+   }
+  aux=0;
+  comp=0;
+  cont=0;
+for(i=0;i<n-1;i++)
+   {
+    diferencia=vec[aux]-vec[aux+1];
+    aux=aux+1;
+	  {if(diferencia>comp)
+       comp=diferencia;
+  }
+printf("la diferencia mayor es %d entre las posiciones\n\n",comp);
+system("pause");
+}
